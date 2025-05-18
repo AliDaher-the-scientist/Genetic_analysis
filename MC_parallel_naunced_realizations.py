@@ -322,7 +322,7 @@ def compute_segment(r_i: np.ndarray, segA: np.ndarray, segB: np.ndarray, neighbo
 # ----------------------
 # Per-realization evaluation
 # ----------------------
-def evaluate_realization(i: int, R, I_emp, neighbours, mesh_prop, cell_dens) -> Optional[Tuple[np.ndarray, float]]:
+def evaluate_realization(i: int, R, I_emp, neighbours, mesh_prop, cell_dens, epsilon) -> Optional[Tuple[np.ndarray, float]]:
     r_i = R[i]
 
     # Directly compute the three segments without inner pool
